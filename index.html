@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Sammy Demo : Multiple controllers + js-model</title>
+    <link rel="stylesheet" href="public/stylesheets/application.css" type="text/css" media="screen" charset="utf-8">
+    <script src="lib/jquery-1.4.2.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="lib/sammy.js" type="text/javascript" charset="utf-8"></script>
+    <script src="lib/underscore-min.js" type="text/javascript" charset="utf-8"></script>    
+    <script src="lib/js-model-0.8.2.min.js" type="text/javascript" charset="utf-8"></script>    
+    <script src="plugins/sammy.template.js" type="text/javascript" charset="utf-8"></script>
+    <script src="plugins/sammy.nested_params.js" type="text/javascript" charset="utf-8"></script>
+    <script src="plugins/sammy.title.js" type="text/javascript" charset="utf-8"></script>    
+    <script src="controllers/main_controller.js" type="text/javascript" charset="utf-8"></script>
+    <script src="controllers/articles_controller.js" type="text/javascript" charset="utf-8"></script>
+    <script src="models/article.js" type="text/javascript" charset="utf-8"></script>    
+  </head>
+  <body>
+    <div id="root">
+      <ul>
+        <li><a href="#/about">About us</a></li>
+        <li><a href="#/articles">Articles</a></li>
+      </ul>        
+    </div>
+    <div id="content"></div>
+  </body>
+</html>
