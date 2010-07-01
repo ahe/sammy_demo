@@ -1,0 +1,27 @@
+= sammy_demo
+
+This project is a sample app using Sammy.js and js-model.
+The goal is to create a MVC model on the client side, using Javascript.
+The app is located in public/javascripts/app.
+
+I also tried to test the application using BDD with ScrewUnit & BlueRidge.
+With this solution, you can test your controllers, views & models in your browser.
+Most of tests can also be automated using Rhino.
+Have a look at the testRoute method in the sammy.test.js plugin.
+There are only a few things at the moment, but you've got the idea.
+
+This app is also using MongoDB & MongoID for the storage.
+
+
+= links
+- http://github.com/quirkey/sammy
+- http://github.com/benpickles/js-model
+- http://github.com/relevance/blue-ridge
+- http://github.com/andykent/smoke
+- http://github.com/durran/mongoid
+
+
+Copyright (c) 2010 Anthony Heukmes, released under the MIT license
+
+My Twitter account : http://twitter.com/2dc
+My company : http://intotheweb.be
