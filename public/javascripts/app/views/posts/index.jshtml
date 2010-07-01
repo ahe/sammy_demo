@@ -1,0 +1,27 @@
+<h1>Listing posts</h1>
+
+<% if(_.isEmpty(posts)) { %>
+  Sorry, we don't have any post yet!
+<% } %>
+
+<% $.each(posts, function(i, post) { %>
+  <div class="post" id="post_<%= post.id() %>">
+    <h2><%= post.attr('title') %></h2>
+    <p>
+      <%= post.attr('content') %>
+    </p>
+    Written by <%= post.attr('author') %>
+    (<a href="#/posts/<%= post.id() %>">Permalink</a>)
+    
+    <br/>
+    
+    <form action="#/posts/<%= post.id() %>" method="delete">
+      <input type="submit" value="Delete"/>
+    </form>
+  </div>
+  <br/>
+<% }); %>
+
+<br/>
+<br/>
+<a href="#/posts/new">Add a new post</a>

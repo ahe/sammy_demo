@@ -1,0 +1,9 @@
+<h1><%= post.attr('title') %></h1>
+<p>
+  <%= post.attr('content') %>
+</p>
+Written by <%= post.attr('author') %>
+
+<br/>
+<br/>
+<a href="#/posts">Back to posts</a>

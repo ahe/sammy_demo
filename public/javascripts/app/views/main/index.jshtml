@@ -1,0 +1,12 @@
+<h1>Welcome to the homepage!</h1>
+<p>
+  We have dummy data for you...
+</p>
+<ul>
+  <% $.each(data, function(i, nb) { %>
+    <li><%= nb %></li>
+  <% }); %>
+</ul>
+<br/>
+<br/>
+<a href="#/posts">Listing posts</a>

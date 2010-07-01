@@ -1,0 +1,17 @@
+<h1>Add a new post</h1>
+<form action="#/posts" method="post">
+  <p>
+    <label>Author</label><br/>
+    <input type="text" name="post[author]"/>
+  </p>  
+  <p>
+    <label>Title</label><br/>
+    <input type="text" name="post[title]"/>
+  </p>
+  <p>
+    <label>Content</label><br/>
+    <textarea name="post[content]" cols="70" rows="6"></textarea>
+  </p>
+  <br/>
+  <p><input type="submit" value="Add" /></p>
+</form>
