@@ -21,7 +21,10 @@ This app is also using MongoDB & MongoID for the storage.
 - http://github.com/durran/mongoid
 
 
+= copyright
+
 Copyright (c) 2010 Anthony Heukmes, released under the MIT license
 
 My Twitter account : http://twitter.com/2dc
+
 My company : http://intotheweb.be
