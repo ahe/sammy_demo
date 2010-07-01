@@ -2,7 +2,6 @@
 
 This project is a sample app using Sammy.js and js-model.
 The goal is to create a MVC model on the client side, using Javascript.
-The app is located in public/javascripts/app.
 
 I also tried to test the application using BDD with ScrewUnit & BlueRidge.
 With this solution, you can test your controllers, views & models in your browser.
@@ -12,6 +11,9 @@ There are only a few things at the moment, but you've got the idea.
 
 This app is also using MongoDB & MongoID for the storage.
 
+The app is located in public/javascripts/app.
+
+The tests are located in test/javascripts.
 
 = links
 - http://github.com/quirkey/sammy
