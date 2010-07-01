@@ -1,7 +1,0 @@
-<h1>Listing articles</h1>
-<ul>
-  <% $.each(articles, function(i, article) { %>
-      <li><a href="#/articles/<%= article.attr('id') %>"><%= article.title() %></a></li>
-  <% }); %>
-</ul>
-<a href="#/articles/new">Add a new article</a>
