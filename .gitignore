@@ -1,0 +1,11 @@
+.bundle
+.DS_Store
+.rvmrc
+log/*.log
+tmp/**/*
+config/database.yml
+config/locales
+db/*.sqlite3
+doc/api
+doc/app
+

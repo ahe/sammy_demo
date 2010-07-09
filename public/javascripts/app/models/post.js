@@ -5,8 +5,10 @@ var Post = Model("post",
 		findAllRemote: function(callback) {
 			$.getJSON('/posts.json', function(data) {
 				$.each(data, function(i, post) {
-					var post = post.post;
-					Post.add(new Post({ id: post.id, title: post.title, content: post.content, author: post.author }));
+					var post_data = post.post;
+					var post = new Post({ id: post_data.id });
+					post.attr(post_data);
+					Post.add(post)
 	      });
 				callback.call(this);
 			});
