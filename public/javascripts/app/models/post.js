@@ -12,16 +12,6 @@ var Post = Model("post",
 	      });
 				callback.call(this);
 			});
-		},
-	
-		create: function(params, callback) {
-			var post = new Post({ author: params['author'], title: params['title'], content: params['content'] });
-			post.save(function(success) {
-			  if (success) {
-					Post.add(post);
-					callback.call(this, post);
-			  }
-			});
 		}
 	}, 
 	{

@@ -15,8 +15,9 @@ PostsController = function(app) { with(app) {
 	
 	// POST create
 	post('#/posts', function(context) {
-		Post.create(context.params['post'], function(post) {
-			context.redirect('#/posts/' + post.id())
+		var post = new Post(context.params['post']);
+		post.save(function(success) {
+			context.redirect('#/posts/' + post.id());
 		});
 	});
 	
