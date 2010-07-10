@@ -1,0 +1,17 @@
+<h1>Edit a post</h1>
+<form action="#/posts/update/<%= post.id() %>" method="put">
+  <p>
+    <label>Author</label><br/>
+    <input type="text" name="post[author]" value="<%= post.attr('author') %>"/>
+  </p>  
+  <p>
+    <label>Title</label><br/>
+    <input type="text" name="post[title]" value="<%= post.attr('title') %>"/>
+  </p>
+  <p>
+    <label>Content</label><br/>
+    <textarea name="post[content]" cols="70" rows="6"><%= post.attr('content') %></textarea>
+  </p>
+  <br/>
+  <p><input type="submit" value="Update" /></p>
+</form>

@@ -10,7 +10,6 @@ class PostsController < ApplicationController
   
   def update
     post = Post.find(params[:id])
-    
     post.update_attributes(params[:post])
     render :json => post.attributes.to_json
   end

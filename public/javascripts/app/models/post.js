@@ -7,8 +7,8 @@ var Post = Model("post",
 				$.each(data, function(i, post) {
 					var post_data = post.post;
 					var post = new Post({ id: post_data.id });
-					post.attr(post_data);
-					Post.add(post)
+					post.merge(post_data);
+					Post.add(post);
 	      });
 				callback.call(this);
 			});

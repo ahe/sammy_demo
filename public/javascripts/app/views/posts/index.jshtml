@@ -14,7 +14,9 @@
     (<a href="#/posts/<%= post.id() %>">Permalink</a>)
     
     <br/>
+    <a href="#/posts/edit/<%= post.id() %>">Edit</a>
     
+    <br/>
     <form action="#/posts/<%= post.id() %>" method="delete">
       <input type="submit" value="Delete"/>
     </form>
