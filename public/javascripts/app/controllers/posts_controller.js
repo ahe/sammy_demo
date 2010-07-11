@@ -30,8 +30,9 @@ PostsController = function(app) { with(app) {
 	// PUT update
 	put('#/posts/update/:id', function(context) {
 		var post = Post.find(context.params['id']);
-		post.update(context.params['post']).save();
-		context.redirect('#/posts/' + post.id())
+		post.update(context.params['post']).save(function(success) {
+			context.redirect('#/posts/' + post.id())
+		});
 	});
 	
 	// DELETE destroy
